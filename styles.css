@@ -1,0 +1,28 @@
+body {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: blue; /* Blue heading */
+}
+
+p {
+    color: green; /* Green paragraph text */
+}
+
+.highlight {
+    background-color: blue; /* Highlighted section in blue */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: green; /* Green footer background */
+    text-align: center;
+}
