@@ -1,0 +1,189 @@
+---
+layout: default
+---
+
+<div class="chapter-container">
+  <div class="chapter-nav">
+    <a href="/books/{{ page.book_id }}/" class="back-to-book">← {{ page.book_title }}</a>
+  </div>
+
+  <article class="chapter-content">
+    <header class="chapter-header">
+      <p class="chapter-meta">Chapter {{ page.chapter_number }}</p>
+      <h1>{{ page.title }}</h1>
+    </header>
+
+    <div class="chapter-text">
+      {{ page.content | markdownify }}
+    </div>
+  </article>
+
+  <div class="chapter-footer">
+    <div class="navigation-buttons">
+      {% if page.prev_chapter %}
+      <a href="/books/{{ page.book_id }}/{{ page.prev_chapter }}/" class="nav-button prev">
+        ← Previous Chapter
+      </a>
+      {% else %}
+      <div class="nav-button disabled">← Previous Chapter</div>
+      {% endif %}
+
+      <a href="/books/{{ page.book_id }}/" class="nav-button back-chapters">
+        All Chapters
+      </a>
+
+      {% if page.next_chapter %}
+      <a href="/books/{{ page.book_id }}/{{ page.next_chapter }}/" class="nav-button next">
+        Next Chapter →
+      </a>
+      {% else %}
+      <div class="nav-button disabled">Next Chapter →</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .chapter-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .chapter-nav {
+    margin-bottom: 2rem;
+  }
+
+  .back-to-book {
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .back-to-book:hover {
+    color: #229954;
+  }
+
+  .chapter-content {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+
+  .chapter-header {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #ecf0f1;
+  }
+
+  .chapter-meta {
+    margin: 0;
+    color: #27ae60;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .chapter-header h1 {
+    margin: 0.5rem 0 0 0;
+    color: #2c3e50;
+    font-size: 2rem;
+  }
+
+  .chapter-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2c3e50;
+  }
+
+  .chapter-text p {
+    margin: 1.2rem 0;
+  }
+
+  .chapter-text p:first-child {
+    margin-top: 0;
+  }
+
+  .chapter-text h2 {
+    margin: 2rem 0 1rem 0;
+    color: #2c3e50;
+    border-bottom: 2px solid #afd8e8;
+    padding-bottom: 0.5rem;
+  }
+
+  .chapter-footer {
+    margin-bottom: 2rem;
+  }
+
+  .navigation-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: 2px solid #afd8e8;
+    color: #27ae60;
+  }
+
+  .nav-button.prev,
+  .nav-button.next {
+    background: linear-gradient(135deg, rgba(173, 216, 230, 0.1) 0%, rgba(144, 238, 144, 0.1) 100%);
+  }
+
+  .nav-button:hover:not(.disabled) {
+    background: linear-gradient(135deg, #afd8e8 0%, #90ee90 100%);
+    color: white;
+    border-color: transparent;
+  }
+
+  .nav-button.back-chapters {
+    background: white;
+  }
+
+  .nav-button.back-chapters:hover {
+    background: #f8fafb;
+    border-color: #27ae60;
+  }
+
+  .nav-button.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    border-color: #bdc3c7;
+    color: #95a5a6;
+  }
+
+  @media (max-width: 600px) {
+    .chapter-content {
+      padding: 1.5rem 1rem;
+    }
+
+    .chapter-header h1 {
+      font-size: 1.5rem;
+    }
+
+    .chapter-text {
+      font-size: 1rem;
+    }
+
+    .navigation-buttons {
+      flex-direction: column;
+    }
+
+    .nav-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style>

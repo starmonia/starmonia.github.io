@@ -1,0 +1,86 @@
+# The Adventures of Starmonia - Books and Chapters
+# Add new books and chapters here. Easy YAML format for non-developers.
+#
+# To add a new book, copy the structure below:
+# - id: book_slug
+#   title: Book Title
+#   subtitle: Optional subtitle
+#   description: What this book is about
+#   chapters:
+#     - id: chapter_slug
+#       title: Chapter Title
+#       content: |
+#         Chapter content here. Use markdown formatting.
+#         You can write multiple paragraphs.
+
+- id: book_one
+  title: "The Awakening"
+  subtitle: "Book I"
+  description: "Where Starmonia's journey begins. A mysterious adventure unfolds under the gaze of curious eyes."
+  chapters:
+    - id: chapter_one
+      title: "A Strange Beginning"
+      content: |
+        The morning sun cast long shadows across the valley as Starmonia opened her eyes.
+        Everything felt different today—the air shimmered with an unusual quality, as if
+        the world itself was holding its breath.
+
+        She stepped outside, her keen senses immediately alert. The forest beyond the
+        settlement called to her in a way she couldn't quite explain. Something was
+        waiting. Something important.
+
+    - id: chapter_two
+      title: "Into the Forest"
+      content: |
+        Starmonia ventured deeper into the ancient forest, her dark coat blending with
+        the shadows of the trees. The path seemed to know where she needed to go, almost
+        as if it was guiding her forward.
+
+        Hours passed, or perhaps only minutes—time felt strange here. Then she saw it:
+        a clearing bathed in golden light, and in its center, something that would change
+        everything.
+
+    - id: chapter_three
+      title: "The Discovery"
+      content: |
+        The crystal glistened in the sunlight, humming with a gentle, rhythmic pulse.
+        Starmonia approached slowly, respectfully, understanding somehow that this moment
+        was important not just for her, but for the entire realm.
+
+        As her paw touched the crystal's surface, visions flooded her mind—past, present,
+        and futures yet to come. She gasped as the truth was revealed: she was chosen for
+        a quest that would take her far beyond her home.
+
+- id: book_two
+  title: "Across the Starlit Bridge"
+  subtitle: "Book II"
+  description: "Starmonia journeys beyond the known lands, crossing challenges and making unexpected allies."
+  chapters:
+    - id: chapter_one
+      title: "Preparing for Departure"
+      content: |
+        The vision still lingered in Starmonia's mind as she prepared her satchel.
+        A journey awaited, and though fear tugged at her heart, curiosity pulled stronger.
+
+        She knew she couldn't make this journey alone. That evening, she gathered those
+        closest to her and shared what the crystal had revealed. Some were skeptical,
+        others offered to join her quest.
+
+    - id: chapter_two
+      title: "First Companion"
+      content: |
+        It was no surprise when her closest friend volunteered immediately. Together they
+        mapped the route the crystal's visions had shown—a path that would take them through
+        the Starlit Bridge, an ancient structure that connected the known world to the realms beyond.
+
+        As they set out at dawn, Starmonia felt both alone and less alone than ever before.
+
+    - id: chapter_three
+      title: "The Bridge Keeper"
+      content: |
+        The bridge was magnificent, spanning a vast chasm. Its railings glowed with
+        ethereal light, and in the center stood a figure—the Bridge Keeper, an ancient
+        guardian of the crossing.
+
+        "Many have sought passage," the Keeper said, eyes like starlight. "But few have
+        the courage to face what lies on the other side. Will you?"
