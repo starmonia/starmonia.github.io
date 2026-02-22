@@ -1,21 +1,21 @@
 body {
-    background-color: black; /* Black background */
-    color: white; /* White text */
+    background-color: #ffffff; /* Bright white background */
+    color: #333333; /* Dark gray text for readability */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
 }
 
 h1 {
-    color: blue; /* Blue heading */
+    color: #ff5733; /* Bright coral heading */
 }
 
 p {
-    color: green; /* Green paragraph text */
+    color: #007bff; /* Bright blue paragraph text */
 }
 
 .highlight {
-    background-color: blue; /* Highlighted section in blue */
+    background-color: #ffeb3b; /* Bright yellow highlight */
     padding: 10px;
     border-radius: 5px;
 }
@@ -23,6 +23,7 @@ p {
 .footer {
     margin-top: 20px;
     padding: 10px;
-    background-color: green; /* Green footer background */
+    background-color: #28a745; /* Bright green footer background */
+    color: white; /* White text in footer for contrast */
     text-align: center;
 }
