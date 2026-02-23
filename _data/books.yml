@@ -16,7 +16,7 @@
 - id: book_one
   title: "Thankful Hearts"
   subtitle: "Book I"
-  description: "A story of a young Star Warrior puppy who shows the meaning of gratitude to a school bully.
+  description: "A story of a young Star Warrior puppy who shows the meaning of gratitude to a school bully."
   chapters:
     - id: chapter_one
       title: "Introduction"
